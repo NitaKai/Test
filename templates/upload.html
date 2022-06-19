@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% block content %}
+    <h1></h1>
+    <form  method="POST" action="/upload"
+          enctype="multipart/form-data">
+
+        <input type="file" name="image" accept="image/png, image/jpeg">
+        <br>
+        <input name="x" type="number" min = "0" value="0"/> x compression
+        <br>
+        <input name="y" type="number" min = "0" value="0"/> y compression
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+    {% endblock %}
+</head>
+<body>
+
+</body>
+</html>
